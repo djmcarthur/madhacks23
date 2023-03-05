@@ -9,12 +9,12 @@
     <button id="togglePlay">Toggle Play</button>
 
     
-    <script src="authscript.js"> // todo combine into one node.js on Express </script> 
+    <!-- <script src="authscript.js"> // todo combine into one node.js on Express </script> --> 
 
     <script src="https://sdk.scdn.co/spotify-player.js"></script>
     <script>
         window.onSpotifyWebPlaybackSDKReady = () => {
-            const token = '[My access token]';
+            const token = 'BQDSRt0tk9dLuizSpRNd4QUQPzoHb9VejZCb0PvRisyhbu1yUfeX_SUfhJ41YvDCCxgwmLLik8mfka2IFQ1JLmhx4QPwLrSzwh-WW6GcBcHvNO-mjeSj_3p3-yMjUwNOQB0aonMjYXvaEeQgwvzM-pzkCNQQ3hAyFpXRZusbxgtEDuzplMIMgoqlVIMALVCIEBV_ei7LhFlOKylvmqvA57s'; // access token
             const player = new Spotify.Player({
                 name: 'Web Playback SDK Quick Start Player',
                 getOAuthToken: cb => { cb(token); },
